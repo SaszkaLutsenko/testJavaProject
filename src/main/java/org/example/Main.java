@@ -3,8 +3,7 @@ package org.example;
 import javax.swing.text.html.StyleSheet;
 import java.util.Scanner;
 
-class Main {
-    public static void main(String[] args) {
+
 
         /*
 
@@ -188,28 +187,57 @@ class Main {
 
     }
 }
+таблиця множення для заданого числа
+ Scanner scan = new Scanner(System.in);
+      System.out.println("Enter number for the table");
+      int a = scan.nextInt();
+      for (int i = 1; i <=10; i++) {
+          System.out.println(a+"x"+i+"="+ (a * i));
 
+
+          гра відгадай число
+            class Main {
+            public static void main(String[] args) {
+      Scanner scan = new Scanner(System.in);
+      int t = (int)(Math.random() * 100) + 1;
+      int n;
+      do {
+          System.out.println("Enter number 1-100");
+          n = scan.nextInt();
+
+          if (n > t) {
+              System.out.println("your number is smaller");
+          } else if (n < t) {
+              System.out.println("your number is bigger");
+          } else {
+              System.out.println("you are a winner!");
+          }}
+          while (n != t);
+                scan.close();
+            }
+}
+      }
          */
+        class Main {
+            public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Enter number of mount");
-        int num = scan.nextInt();
+      Scanner scan = new Scanner(System.in);
+      int t = (int)(Math.random() * 100) + 1;
+      int n;
+      do {
+          System.out.println("Enter number 1-100");
+          n = scan.nextInt();
 
-
-
-        if (num >= 90 && num <= 100) {
-            System.out.println("A");
-        } else if (num <= 89 && num >= 80  ) {
-            System.out.println("B");
-        } else if (num <= 79 && num >= 70  ) {
-            System.out.println("c");
-        } else if (num <= 69 && num >= 60  ) {
-            System.out.println("d");
-        } else if (num <= 59) {
-            System.out.println("f");
-        }
-
-    }
+          if (n > t) {
+              System.out.println("your number is smaller");
+          } else if (n < t) {
+              System.out.println("your number is bigger");
+          } else {
+              System.out.println("you are a winner!");
+          }}
+          while (n != t);
+                scan.close();
+            }
 }
 
 
