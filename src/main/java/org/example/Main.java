@@ -304,10 +304,9 @@ ArrayList <Integer> numbers = new ArrayList<>();
 //                for(int num : numbers){}
             System.out.println(num2);
 
- */
-        class Main {
-            public static void main(String[] args) {
-                ArrayList<Integer> numbers = new ArrayList<>();
+            знайти максимальне і мінімальне число з масиву
+
+            ArrayList<Integer> numbers = new ArrayList<>();
                 numbers.add(11);
                 numbers.add(12);
                 numbers.add(34);
@@ -327,8 +326,35 @@ ArrayList <Integer> numbers = new ArrayList<>();
                 }
                 System.out.println(q);
 
+ */
+        class Main {
+            public static void main(String[] args) {
+               Scanner scan = new Scanner(System.in);
+                System.out.println("Please enter number d: ");
+               byte d = scan.nextByte();
+                System.out.println("Please enter number f: ");
+                byte f = scan.nextByte();
+                System.out.println("Please enter number e: ");
+               byte e = scan.nextByte();
 
+                        info(String.valueOf(max(d,f,e)));
             }
+
+            public static int max (int a, int b, short c) {
+                int res = a;
+               if(res < b ){
+               res = b;
+               } else if (res < c ){
+                   res = c;
+               } return res;
+            }
+
+
+            public  static  void  info(String word){
+                System.out.print(word);
+                System.out.println(", заїбав!");
+            }
+
                 }
 
 
