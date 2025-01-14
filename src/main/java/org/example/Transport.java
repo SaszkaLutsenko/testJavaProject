@@ -5,9 +5,9 @@ public class Transport {
 //    public int speed;
 //    public String color;
 //    public String numberRegistration;
-    public String brand;
-    public String model;
-    public int year;
+    private String brand;
+    private String model;
+    private int year;
 
     public void setValues( String _brand, int _year, String _model ){
 //        weight = _weight;
