@@ -7,8 +7,15 @@ public class Dog extends Animals{
         this.breed = breed;
         System.out.println("breed is " + breed);
     }
+
     @Override
-    public void Speack() {
-        System.out.println(" wof-wof");
+    public String Speack() {
+        String info = "wof-wof";
+        return info;
+    }
+
+    @Override
+    public void processPayment() {
+        System.out.println("you pay by credit card");
     }
 }

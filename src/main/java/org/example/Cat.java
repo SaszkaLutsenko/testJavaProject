@@ -7,12 +7,19 @@ public class Cat extends Animals {
         this.color = color;
         System.out.println("color is " + color);
     }
+
     @Override
-    public void Speack() {
-        System.out.println("meu-meu");
+    public String Speack() {
+        String info = "meu-meu";
+        return info;
     }
 
     public void Cat(){
         super.name = "kot";
+    }
+
+    @Override
+    public void processPayment() {
+        System.out.println("you pay by PayPal");
     }
 }
