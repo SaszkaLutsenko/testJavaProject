@@ -22,4 +22,7 @@ public class Cat extends Animals {
     public void processPayment() {
         System.out.println("you pay by PayPal");
     }
+
+    public void legs(boolean q, int i) {
+    }
 }

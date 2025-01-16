@@ -1,6 +1,6 @@
 package org.example;
 
-public class Animals {
+public abstract  class Animals {
 
     public String Speack(){
         String info = "animals speaks";
@@ -12,8 +12,32 @@ public class Animals {
         this.name = name;
         System.out.println("name is " + name);
     }
+    public  Legs legs = new Legs();
 
-    public void processPayment(){
-        System.out.println("wait for payment");
+    public abstract void legs(boolean b, int i);
+
+    class Legs {
+        boolean horns;
+        boolean legs;
+        int numberLegs;
+
+        public void legs(boolean horns, boolean legs, int numberLegs){
+        this.legs = legs;
+        this.numberLegs = numberLegs;
+        infoAboutHorns();
+
+        }
+
+        public void infoAboutHorns(){
+            if(horns) System.out.println("this animal have " + numberLegs + " legs");
+            else System.out.println("this animal didn't have legs");
+        }
     }
+
+    public abstract void processPayment();
+
+    public void getInfo(){
+        System.out.println("шо ти голова?");
+    }
+
 }

@@ -5,9 +5,10 @@ import java.util.*;
 
         class Main {
             public static void main(String[] args) {
-                Animals www = new Animals();
+                Cat www = new Cat();
                 www.setName("piza");
-                System.out.println(www.Speack());
+                www.getInfo();
+                www.legs(true, 4);
 
                 Dog qqq = new Dog();
                 qqq.setName("twar");

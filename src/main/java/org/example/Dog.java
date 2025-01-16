@@ -16,6 +16,11 @@ public class Dog extends Animals{
 
     @Override
     public void processPayment() {
-        System.out.println("you pay by credit card");
+        System.out.println("you pay by card");
+    }
+
+    @Override
+    public void legs(boolean b, int i) {
+        System.out.println("www");
     }
 }
