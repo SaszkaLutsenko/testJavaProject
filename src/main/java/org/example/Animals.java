@@ -12,24 +12,21 @@ public abstract  class Animals {
         this.name = name;
         System.out.println("name is " + name);
     }
-    public  Legs legs = new Legs();
-
-    public abstract void legs(boolean b, int i);
+    public Legs legs = new Legs();
 
     class Legs {
-        boolean horns;
         boolean legs;
         int numberLegs;
 
-        public void legs(boolean horns, boolean legs, int numberLegs){
+        public void setLegs(boolean legs, int numberLegs){
         this.legs = legs;
         this.numberLegs = numberLegs;
-        infoAboutHorns();
+        infoAboutLegs();
 
         }
 
-        public void infoAboutHorns(){
-            if(horns) System.out.println("this animal have " + numberLegs + " legs");
+        public void infoAboutLegs(){
+            if(legs) System.out.println("this animal have " + numberLegs + " legs");
             else System.out.println("this animal didn't have legs");
         }
     }

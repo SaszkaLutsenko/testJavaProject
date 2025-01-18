@@ -11,9 +11,4 @@ public class Cow extends Animals{
     public void processPayment() {
         System.out.println("you pay by stone");
     }
-
-    @Override
-    public void legs(boolean b, int i) {
-        System.out.println("ooo");
-    }
 }
