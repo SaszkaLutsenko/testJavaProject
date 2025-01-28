@@ -19,6 +19,12 @@ class Main {
                 System.out.println("where you want work?");
                 String work = scr.nextLine();
 
+                System.out.println("what is your name?");
+                String proffecione = scr.nextLine();
+
+                System.out.println("where you want work?");
+                String worke = scr.nextLine();
+
                 System.out.println("where you watch lessons?");
                 String platforme = scr.nextLine();
 
@@ -38,7 +44,7 @@ class Main {
                 System.out.println("i want larn " + proffecion + "because i want to start work in " + work +
                         " now i watch lesson from " + platforme + " , something "+ from + " blogger" +
                         " and i watch "+ integerLessons +" lessons like " + time + " minutes and i must write script and save" +
-                        " this task at " + platformeForSave + ".");
+                        " this task at " + platformeForSave + "." + proffecione + worke);
 
             }};
 
