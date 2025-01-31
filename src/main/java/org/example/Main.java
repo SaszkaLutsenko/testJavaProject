@@ -45,26 +45,28 @@ class Main {
 //                    System.out.println(res);
 //                };
 //
-                double a = 7.5;
-                double b = 20.0;
+               String text = "    jak nauczyc sie programowania   ";
+               text = text.strip().toUpperCase();
+//                text = text.strip().toUpperCase().substring(4);
 
-                double c = (b / a);
-                System.out.println(c);
-                System.out.println(Math.round(c));
-                System.out.println(Math.ceil(c));
-                System.out.println(Math.floor(c));
-                System.out.println(Math.round(c * 100.0) / 100.0);
+               String[] words = text.split(" ", 2);
+               String res = words.length > 1 ? words[1] : "";
+                System.out.println(res);
 
-                BigDecimal roundNumber = new BigDecimal(c).setScale(2, RoundingMode.HALF_UP);
-                System.out.println(roundNumber.doubleValue());
+               }
+////               text = text.replace(" ", "+");
+//               int lenght = text.length();
+//               text = text.strip();
+//                System.out.println(text);
+//                System.out.println(lenght);
+//                boolean startWithI = text.startsWith("I");
+//                boolean endsWithY = text.endsWith("y");
+//                System.out.println(startWithI);
+//                System.out.println(endsWithY);
 
-                DecimalFormat decimalFormat = new DecimalFormat("###.##");
-                System.out.println(decimalFormat.format(c));
 
-                String formated = String.format("%.2f", c);
-                System.out.println(formated);
 
-            }}
+            }
 
 
 
