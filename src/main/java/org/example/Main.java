@@ -99,49 +99,49 @@ class Main {
 //                    System.out.println("i dont know this color?");
 //                }
 
-                List<Integer> numbers = new LinkedList<>();
-                numbers.add(1);
-                numbers.add(2);
-                numbers.add(3);
-                numbers.add(4);
-                numbers.add(5);
-                System.out.println(numbers);
-
-
-                Set<Integer> numbersSet = new TreeSet<>();
-
-                numbersSet.add(11);
-                numbersSet.add(22);
-                numbersSet.add(13);
-                numbersSet.add(10);
-                numbersSet.add(1);
-
-                System.out.println(numbersSet);
-
-                Map<Integer, String> map = new HashMap<>();
-                map.put(1, "one");
-                map.put(2, "two");
-                map.put(3, "thee");
-                map.put(4, "four");
-                System.out.println(map);
-
-                Stack<Integer> stack = new Stack<>();
-
-                stack.add(2);
-                stack.add(4);
-                stack.add(11);
-                stack.add(10);
-                System.out.println(stack.pop());
-                System.out.println(stack.peek());
-
-                Queue<Integer> queue = new LinkedList<>();
-                queue.add(2);
-                queue.add(4);
-                queue.add(55);
-                queue.add(3);
-
-                System.out.println(queue.peek());
-                System.out.println(queue.poll());
+//                List<Integer> numbers = new LinkedList<>();
+//                numbers.add(1);
+//                numbers.add(2);
+//                numbers.add(3);
+//                numbers.add(4);
+//                numbers.add(5);
+//                System.out.println(numbers);
+//
+//
+//                Set<Integer> numbersSet = new TreeSet<>();
+//
+//                numbersSet.add(11);
+//                numbersSet.add(22);
+//                numbersSet.add(13);
+//                numbersSet.add(10);
+//                numbersSet.add(1);
+//
+//                System.out.println(numbersSet);
+//
+//                Map<Integer, String> map = new HashMap<>();
+//                map.put(1, "one");
+//                map.put(2, "two");
+//                map.put(3, "thee");
+//                map.put(4, "four");
+//                System.out.println(map);
+//
+//                Stack<Integer> stack = new Stack<>();
+//
+//                stack.add(2);
+//                stack.add(4);
+//                stack.add(11);
+//                stack.add(10);
+//                System.out.println(stack.pop());
+//                System.out.println(stack.peek());
+//
+//                Queue<Integer> queue = new LinkedList<>();
+//                queue.add(2);
+//                queue.add(4);
+//                queue.add(55);
+//                queue.add(3);
+//
+//                System.out.println(queue.peek());
+//                System.out.println(queue.poll());
 
 
 
