@@ -1,14 +1,17 @@
 package org.example;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.text.DecimalFormat;
-import java.util.*;
+import org.postgresql.core.ConnectionFactory;
 
+//import java.math.BigDecimal;
+//import java.math.RoundingMode;
+//import java.text.DecimalFormat;
+import java.util.*;
+import java.sql.DriverManager;
+import java.sql.Connection;
 
 class Main {
-            public static void main(String[] args) {
-                Scanner scr = new Scanner(System.in);
+            public static void main(String[] args)  {
+//                Scanner scr = new Scanner(System.in);
 
 //                System.out.println("Enter first name :");
 //                String firstName = scr.nextLine();
@@ -142,6 +145,10 @@ class Main {
 //
 //                System.out.println(queue.peek());
 //                System.out.println(queue.poll());
+
+                String sql = "SELECT name FROM base WHERE base";
+
+                Connection con = DriverManager.getConnection();
 
 
 
